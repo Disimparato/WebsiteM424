@@ -1,0 +1,143 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f5a3a3;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #ece9a2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 90px;
+}
+
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f2e182;
+}
+
+
+section {
+    padding: 20px;
+    background-color: #ffebeb;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+
+.menu-section {
+    background-color: #ffca9e;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+.menu-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+
+.featured-sections {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.featured-sections li {
+    margin: 20px;
+    text-align: center;
+}
+
+
+.featured-sections a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.9rem;
+    transition: color 0.3s;
+    display: block;
+    text-align: center;
+}
+
+
+.featured-sections a:hover {
+    color: #063e98; 
+}

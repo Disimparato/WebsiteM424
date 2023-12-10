@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirin Bakery</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <!-- Your custom styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5e1;
+            color: #666;
+        }
+
+        header {
+            background-color: #f2e182; 
+            padding: 15px;
+            text-align: center;
+            color: #333;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header img {
+            max-width: 20%; 
+            height: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #aec6cf; 
+            color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #e8491d; 
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20px;
+            background-color: #e8491d; 
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cta-button:hover {
+            background-color: #d1481a; 
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        footer {
+            background-color: #aec6cf; 
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #e8491d; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shirin Bakery</h1>
+        <img src="logo.jpg" alt="Shirin Bakery Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Shirin Bakery, Where Every Bite Feels Like Home</h2>
+        <a href="menu.html" class="cta-button">Explore Our Menu</a>
+
+        <div>
+            <img src="bakery-interior.jpg" alt="Bakery Interior" style="width: 50%; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);">
+        </div>
+        <h3>Discover the Shirin experience</h3>
+        <p>At Shirin Bakery, our story begins with a childhood dream. We've created a space where you can feel like you're at home, sipping coffee and indulging in delightful pastries. Our cozy atmosphere and warm conversations make Shirin a place where you can relax and enjoy the simple pleasures of life.</p>
+        <h3>Featured Products:</h3>
+        <ul>
+            <li>Basque Cheesecake - Irresistibly creamy, our Basque cheesecake is a symphony of flavors. Discover a slice of heaven with each bite.</li>
+            <img src="basque.jpg" alt="Basque" style="width: 20%; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);">
+
+            <li>Eclair - Our delicate, handcrafted eclairs are a testament to pure indulgence. Experience the exquisite taste of our eclairs.</li>
+            <img src="Eclair.jpg" alt="Eclair" style="width: 20%; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);">
+
+            <li>Tres Leches Cake - A delightful classic, our Tres Leches cake is soaked in three kinds of milk for a sweet, moist treat.</li>
+            <img src="tres.jpg" alt="Tres Leches Cake" style="width: 20%; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);">
+        </ul>
+
+        <!-- HTML5 input and button -->
+        <form id="emailForm">
+            <label for="email">Subscribe to our newsletter:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="button" onclick="subscribe()">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Shirin Bakery. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
+    </footer>
+
+  <video id="myVideo" width="640" height="360" controls>
+      <source src="example.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+
+    <!-- Bootstrap JavaScript (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+ <!-- Your custom JavaScript -->
+  <script src="script.js"></script>
+
+  <script>
+    function subscribe() {
+        alert("Subscribed successfully!");
+    }
+  </script>
+</body>
+</html>
